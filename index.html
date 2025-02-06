@@ -4,44 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Animate.css for Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>My Portfolio</h1>
+            <h1 class="animate__animated animate__fadeInDown">My Portfolio</h1>
             <nav>
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about" class="animate__animated animate__fadeInDown animate__delay-1s">About</a></li>
+                    <li><a href="#projects" class="animate__animated animate__fadeInDown animate__delay-2s">Projects</a></li>
+                    <li><a href="#contact" class="animate__animated animate__fadeInDown animate__delay-3s">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <section id="hero">
+        <div class="container">
+            <h2 class="animate__animated animate__fadeInUp">Welcome to My World of Creativity</h2>
+            <p class="animate__animated animate__fadeInUp animate__delay-1s">I'm a passionate web developer who loves building beautiful and functional websites.</p>
+            <a href="#projects" class="btn animate__animated animate__fadeInUp animate__delay-2s">View My Work</a>
+        </div>
+    </section>
+
     <section id="about" class="section">
         <div class="container">
-            <h2>About Me</h2>
-            <p>Hello! I'm a web developer passionate about creating beautiful and functional websites. I have experience in HTML, CSS, JavaScript, and more.</p>
+            <h2 class="animate__animated animate__fadeIn">About Me</h2>
+            <div class="about-content">
+                <img src="https://via.placeholder.com/200" alt="Profile Picture" class="animate__animated animate__fadeInLeft">
+                <p class="animate__animated animate__fadeInRight">Hello! I'm a web developer with a passion for creating stunning and user-friendly websites. I specialize in HTML, CSS, JavaScript, and modern frameworks. Let's build something amazing together!</p>
+            </div>
         </div>
     </section>
 
     <section id="projects" class="section">
         <div class="container">
-            <h2>Projects</h2>
+            <h2 class="animate__animated animate__fadeIn">Projects</h2>
             <div class="project-grid">
-                <div class="project">
+                <div class="project animate__animated animate__fadeInUp">
+                    <i class="fas fa-code project-icon"></i>
                     <h3>Project 1</h3>
-                    <p>Description of Project 1.</p>
+                    <p>A responsive website built with HTML, CSS, and JavaScript.</p>
                 </div>
-                <div class="project">
+                <div class="project animate__animated animate__fadeInUp animate__delay-1s">
+                    <i class="fas fa-paint-brush project-icon"></i>
                     <h3>Project 2</h3>
-                    <p>Description of Project 2.</p>
+                    <p>A creative design project showcasing modern UI/UX principles.</p>
                 </div>
-                <div class="project">
+                <div class="project animate__animated animate__fadeInUp animate__delay-2s">
+                    <i class="fas fa-mobile-alt project-icon"></i>
                     <h3>Project 3</h3>
-                    <p>Description of Project 3.</p>
+                    <p>A mobile-first web application with a focus on performance.</p>
                 </div>
             </div>
         </div>
@@ -49,8 +70,8 @@
 
     <section id="contact" class="section">
         <div class="container">
-            <h2>Contact Me</h2>
-            <form id="contact-form">
+            <h2 class="animate__animated animate__fadeIn">Contact Me</h2>
+            <form id="contact-form" class="animate__animated animate__fadeInUp">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 
@@ -60,7 +81,7 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
                 
-                <button type="submit">Send</button>
+                <button type="submit" class="btn">Send</button>
             </form>
         </div>
     </section>
@@ -68,6 +89,11 @@
     <footer>
         <div class="container">
             <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
         </div>
     </footer>
 
